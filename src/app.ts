@@ -151,10 +151,12 @@ class GamepadController {
                 axisElement.textContent = `${axis}: ${gamepad.axes[index]?.toFixed(2) ?? 0}`;
             }
 
-            if (index % 2 === 0) {
+            // Stick X-axes are assumed to be named [L|R]SX (Left/Right Stick X)
+            if (axis[1] + axis[2] === 'SX') {
                 const stick = document.querySelector(`.${buttonSvgClasses[axis]}`) as HTMLElement;
                 if (stick) {
                     const x = gamepad.axes[index] ?? 0;
+                    // SX (Stick X) is assumed to precede stick Y
                     const y = gamepad.axes[index + 1] ?? 0;
                     stick.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
                 }

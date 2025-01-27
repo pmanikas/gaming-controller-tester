@@ -18,8 +18,8 @@ export const controllerMappings: { [key: string]: ControllerMapping } = {
     },
     'PS4': {
         name: 'PlayStation 4 Controller',
-        buttons: ['Cross', 'Circle', 'Square', 'Triangle', 'L1', 'R1', 'L2', 'R2', 'Share', 'Options', 'L3', 'R3', 'DPadUp', 'DPadDown', 'DPadLeft', 'DPadRight', 'PS', 'Touchpad'],
-        axes: ['LSX', 'LSY', 'RSX', 'RSY'],
+        buttons: ['Cross', 'Circle', 'Triangle', 'Square', 'L1', 'R1', 'L2', 'R2', 'Share', 'Options', 'PS', 'L3', 'R3', 'DPadUp', 'DPadDown', 'DPadLeft', 'DPadRight', 'Touchpad'],
+        axes: ['LSX', 'LSY', 'VL2', 'RSX', 'RSY', 'VR2'],
         svg: 'dual-shock-4.svg'
     },
     'PS5': {

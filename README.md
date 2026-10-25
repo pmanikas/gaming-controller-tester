@@ -43,6 +43,8 @@ A lightweight, browser-based tool for testing and visualizing gamepad inputs. Th
 
 - [Check on Github Pages](https://pmanikas.github.io/controller-tester/)
 
+You can also use [Quick Gamepad Test](https://quick-gamepadtest.online/) as a free browser-based gamepad tester to check controller buttons, triggers, analog sticks, stick drift, and vibration without installing any software.
+
 ## Development
 
 ### Installation
